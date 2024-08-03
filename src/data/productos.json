@@ -108,15 +108,5 @@
     "stock": 1000,
     "category": "golosinas",
     "thumbnail": "sin imagen"
-  },
-  {
-    "id": 11,
-    "title": "Chicles Beldent",
-    "description": "Mentol",
-    "code": "abc1354",
-    "price": 500,
-    "status": true,
-    "stock": 1000,
-    "category": "golosinas"
   }
 ]

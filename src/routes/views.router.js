@@ -7,9 +7,15 @@ const manager = new ProductManager("./src/data/productos.json");
 router.get("/products", async (req, res) => {
     const productos = await manager.getProducts();
 
-    res.render("index", {productos});
-} )
+    res.render("home", {productos});
+})
 
+//punto 2. mostrar los productos en tiempo real con form para agregar y boton de eliminar
+
+
+router.get("/realtimeproducts", (req, res) => {
+    res.render("realtimeproducts");
+})
 
 
 module.exports = router;

@@ -1,0 +1,18 @@
+<h2>MOSTRAR TODOS LOS PRODUCTOS EN TIEMPO REAL</h2>
+
+<div id="contenedorProductos"></div>
+
+
+<h2>agregar un formulario que envie un producto</h2>
+ <div class="form-container">
+        <form id="addProductForm">
+            <input type="text" id="title" name="title" placeholder="Título del producto" required>
+            <input type="text" id="description" name="description" placeholder="Descripción del producto" required>
+            <input type="number" id="price" name="price" placeholder="Precio del producto" required>
+            <button type="submit">Agregar Producto</button>
+        </form>
+    </div>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.7.5/socket.io.min.js"></script>
+<script src="js/main.js"></script>
