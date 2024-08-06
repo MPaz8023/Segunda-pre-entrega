@@ -47,7 +47,7 @@ form.addEventListener('submit', function(event) {
     const price = priceInput.value;
 
     // Emitir un evento con los datos del producto
-    socket.emit('addProduct', {
+    socket.emit('agregarProducto', {
         title: title,
         description: description,
         price: price

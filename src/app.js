@@ -42,7 +42,16 @@ io.on("connection", async (socket) => {
         await manager.deleteProduct(id);
 
         io.sockets.emit("productos", await manager.getProducts());
-    })
+    });
+
+    socket.on("agregarProducto", async (nuevoProducto) => {
+        try {
+            await manager.addProduct(nuevoProducto);
+            io.sockets.emit("productos", await manager.getProducts());
+        } catch (error) {
+            console.log("Error al agregar el producto:", error);
+        }
+    });
 
 
 })
